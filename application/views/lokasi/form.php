@@ -10,7 +10,7 @@
 <div class="container min-view-port">
     <div class="card my-3">
         <div class="card-header">
-            <h1><?php echo isset($proyek) ?  "Edit" : "Tambah" ?> Lokasi</h1>
+            <h1><?php echo isset($lokasi) ?  "Edit" : "Tambah" ?> Lokasi</h1>
         </div>
 
         <div class="card-body">
