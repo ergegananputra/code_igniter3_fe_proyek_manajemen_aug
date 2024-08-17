@@ -22,6 +22,7 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                   <a class="nav-link" href="<?= base_url('proyek') ?>">Proyek</a>
+                  <a class="nav-link" href="<?= base_url('lokasi') ?>">Manajemen Lokasi</a>
               </div>
               </div>
           </div>

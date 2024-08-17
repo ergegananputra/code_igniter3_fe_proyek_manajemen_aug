@@ -92,7 +92,10 @@
                         </select>
                     </div>
                 <?php endif; ?>
-                    
+
+                <?php if (isset($proyek)) : ?>
+                    <input type="hidden" name="lokasi" value="<?php echo $proyek->lokasis[0]->id; ?>">
+                <?php endif; ?>    
 
 
                 <div class="form-group">

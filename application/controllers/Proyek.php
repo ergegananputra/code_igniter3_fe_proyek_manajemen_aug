@@ -127,7 +127,7 @@ class Proyek extends CI_Controller {
         return new ProyekModel($proyek["data"]);
     }
     
-    private function view_form($data, $isEdit = false) {
+    private function view_form($data) {
         $this->load->view('templates/header', $data);
         $this->load->view('proyek/form', $data);
         $this->load->view('templates/footer');
