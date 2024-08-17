@@ -1,7 +1,7 @@
 <div class="container min-view-port">
     <div class="d-flex justify-content-between align-items-center my-4">
         <h1>Manajemen Lokasi</h1>
-        <a href="<?= base_url('lokasi/create') ?>" class="btn btn-primary"><i class="bi bi-plus-lg"></i> Tambah Proyek</a>
+        <a href="<?= base_url('lokasi/create') ?>" class="btn btn-primary"><i class="bi bi-plus-lg"></i> Tambah Lokasi</a>
     </div>
 
     <hr>
