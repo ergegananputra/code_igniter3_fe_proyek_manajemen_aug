@@ -7,7 +7,7 @@
     }
 </style>
 
-<div class="container">
+<div class="container min-view-port">
     <div class="card my-3">
         <div class="card-header">
             <h1><?php echo isset($proyek) ?  "Edit" : "Tambah" ?> Proyek</h1>

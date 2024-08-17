@@ -21,6 +21,27 @@ class Proyek extends CI_Controller {
         $this->load->view('templates/footer');
     }
 
+    public function search_proyek($query) {
+        $url = API_HOST . '/proyek/search?query=' . $query;
+
+        $response = call_api($url);
+        $proyeks = json_decode($response, true);
+
+        $proyekModels = [];
+        if ($proyeks["data"] == null) {
+            return $proyekModels;
+        }
+        if (count($proyeks["data"]) == 0) {
+            return $proyekModels;
+        }
+        foreach ($proyeks["data"] as $proyek) {
+            $proyekModel = new ProyekModel($proyek);
+            $proyekModels[] = $proyekModel;
+        }
+
+        return $proyekModels;
+    }
+
     public function create() {
         $data['title'] = 'Tambah Proyek';
         $data['lokasis'] = $this->get_all_locations();
